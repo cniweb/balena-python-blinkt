@@ -4,9 +4,9 @@ FROM balenalib/%%BALENA_MACHINE_NAME%%-python:3-stretch-run
 
 # use `install_packages` if you need to install dependencies,
 # for instance if you need git, just uncomment the line below.
-RUN install_packages gcc && \
+RUN install_packages build-essential && \
     apt-get update && \
-    apt-get install -y linux-libc-dev && \
+    apt-get upgrade && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
@@ -17,7 +17,8 @@ WORKDIR /usr/src/app
 COPY requirements.txt requirements.txt
 
 # pip install python deps from requirements.txt on the resin.io build server
-RUN pip install -r requirements.txt
+RUN sudo pip3 install --upgrade pip setuptools
+RUN pip3 install -r requirements.txt
 
 # This will copy all files in our root to the working  directory in the container
 COPY . ./
