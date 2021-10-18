@@ -1,0 +1,34 @@
+name: balenaBlinkt
+type: sw.application
+description: >-
+  RESTful API for controlling a Raspberry Pi with a Blinkt(!) board attached over balena cloud
+post-provisioning: >-
+  ## Usage instructions
+  
+  You can use the public device URL from your device for controlling the Blinkt(!) board.
+
+  ### Examples
+
+  Turn all light on: https://***.balena-devices.com/on
+  Turn all light off: https://***.balena-devices.com/off
+  Turn all light red: https://***.balena-devices.com/red
+  Turn all light green: https://***.balena-devices.com/green
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/cniweb/balena-python-blinkt.git'
+  logo:
+    type: blob.asset
+    data:
+      url: >-
+        https://raw.githubusercontent.com/cniweb/balena-python-blinkt/master/logo.png
+data:
+  defaultDeviceType: raspberrypi3
+  supportedDeviceTypes:
+    - raspberry-pi
+    - raspberry-pi2
+    - raspberrypi3
+    - raspberrypi3-64
+    - raspberrypi4-64
+version: 3.5.2
