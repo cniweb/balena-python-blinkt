@@ -7,16 +7,16 @@ RESTful API for controlling a Raspberry Pi with a BLINKT(!) board attached over 
 ## Hardware required
 
 * Raspberry Pi 3 or 4
-* Pimoroni ![BLINKT(!) board](https://shop.pimoroni.com/products/blinkt)
+* Pimoroni [BLINKT(!) board](https://shop.pimoroni.com/products/blinkt)
 * A 4GB or greater micro SD card (We always recommend SanDisk Extreme Pro SD cards)
 * Power supply
 
 ## Software required
 
 * A download of this project
-* Software to flash an SD card (![balenaEtcher](https://balena.io/etcher))
-* A free ![balenaCloud](https://balena.io/cloud) account
-* The ![balena CLI tools](https://github.com/balena-io/balena-cli/blob/master/INSTALL.md)
+* Software to flash an SD card ([balenaEtcher](https://balena.io/etcher))
+* A free [balenaCloud](https://balena.io/cloud) account
+* The [balena CLI tools](https://github.com/balena-io/balena-cli/blob/master/INSTALL.md)
 
 ## Setup and use
 
@@ -24,10 +24,10 @@ To run this project is as simple as deploying it to a balenaCloud application, n
 
 ### Setup the device
 
-* Sign up for or login to the ![balenaCloud dashboard](https://dashboard.balena-cloud.com)
+* Sign up for or login to the [balenaCloud dashboard](https://dashboard.balena-cloud.com)
 * Create an application, selecting the correct device type for your Raspberry Pi
 * Add a device to the application, enabling you to download the OS
-* Flash the downloaded OS to your SD card with ![balenaEtcher](https://balena.io/etcher)
+* Flash the downloaded OS to your SD card with [balenaEtcher](https://balena.io/etcher)
 * Power up the board and check it's online in the dashboard
 
 ### One Click Deployment
@@ -38,7 +38,7 @@ You can deploy this server with one click with the button below. Or, you can fol
 
 ### Manually Deploy this application
 
-* Install the ![balena CLI tools](https://github.com/balena-io/balena-cli/blob/master/INSTALL.md)
+* Install the [balena CLI tools](https://github.com/balena-io/balena-cli/blob/master/INSTALL.md)
 * Login with `balena login`
 * Download this project and from the project directory run `balena push <appName>` where `<appName>` is the name you gave your balenaCloud application in the first step.
 
