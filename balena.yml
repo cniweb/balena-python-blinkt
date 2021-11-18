@@ -14,7 +14,9 @@ post-provisioning: >-
   Turn all light off: https://...balena-devices.com/off
 
   Turn all light red: https://...balena-devices.com/red
-  
+
+  Turn all light yellow: https://...balena-devices.com/yellow
+   
   Turn all light green: https://...balena-devices.com/green
 assets:
   repository:
@@ -34,4 +36,4 @@ data:
     - raspberrypi3
     - raspberrypi3-64
     - raspberrypi4-64
-version: 3.5.2
+version: 3.6.0
