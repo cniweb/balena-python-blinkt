@@ -85,6 +85,21 @@ def set_red():
 
     return jsonify(data)
 
+@app.route('/yellow')
+def set_yellow():
+    set_brightness(0.5)
+
+    for x in range(NUM_PIXELS):
+        set_pixel(x, 255, 255, 0)
+        show()
+
+        data = {
+            "status": 200,
+            "message": "Lights are now yellow"
+        }
+
+    return jsonify(data)
+
 @app.route('/green')
 def set_green():
     set_brightness(0.5)
