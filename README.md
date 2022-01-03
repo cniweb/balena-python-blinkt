@@ -48,25 +48,31 @@ You can use the public device URL from your device for controlling the BLINKT(!)
 
 ### Examples
 
-Turn all light on:
+Turn all lights on:
 
 ```javascript
 https://***.balena-devices.com/on
 ```
 
-Turn all light off:
+Turn all lights off:
 
 ```javascript
 https://***.balena-devices.com/off
 ```
 
-Turn all light red:
+Turn all lights red:
 
 ```javascript
 https://***.balena-devices.com/red
 ```
 
-Turn all light green:
+Turn all lights yellow:
+
+```javascript
+https://***.balena-devices.com/yellow
+```
+
+Turn all lights green:
 
 ```javascript
 https://***.balena-devices.com/green

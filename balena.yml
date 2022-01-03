@@ -9,15 +9,15 @@ post-provisioning: >-
 
   ### Examples
 
-  Turn all light on: https://...balena-devices.com/on
+  Turn all lights on: https://...balena-devices.com/on
 
-  Turn all light off: https://...balena-devices.com/off
+  Turn all lights off: https://...balena-devices.com/off
 
-  Turn all light red: https://...balena-devices.com/red
+  Turn all lights red: https://...balena-devices.com/red
 
-  Turn all light yellow: https://...balena-devices.com/yellow
+  Turn all lights yellow: https://...balena-devices.com/yellow
    
-  Turn all light green: https://...balena-devices.com/green
+  Turn all lights green: https://...balena-devices.com/green
 assets:
   repository:
     type: blob.asset
